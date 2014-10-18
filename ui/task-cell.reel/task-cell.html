@@ -23,6 +23,16 @@
                 "checked": {"<->": "@owner.task.completed"}
             }
         },
+        "textArea": {
+            "prototype": "digit/ui/text-area.reel",
+            "properties": {
+                "element": {"#": "textArea"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value1": {"<->": "@owner.task.details"}
+            }
+        },
         "textField": {
             "prototype": "digit/ui/text-field.reel",
             "properties": {
@@ -40,6 +50,7 @@
     <div data-montage-id="owner" class="TaskCell">
         <input type="checkbox" data-montage-id="checkbox">
         <input data-montage-id="textField" type="text">
+        <textarea data-montage-id="textArea"></textarea>
     </div>
 </body>
 </html>
