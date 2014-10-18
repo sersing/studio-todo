@@ -32,16 +32,6 @@
             "bindings": {
                 "value1": {"<->": "@owner.task.details"}
             }
-        },
-        "textField": {
-            "prototype": "digit/ui/text-field.reel",
-            "properties": {
-                "element": {"#": "textField"},
-                "placeholderValue": "Text"
-            },
-            "bindings": {
-                "value": {"<->": "@owner.task.title"}
-            }
         }
     }
     </script>
@@ -49,8 +39,7 @@
 <body>
     <div data-montage-id="owner" class="TaskCell">
         <input type="checkbox" data-montage-id="checkbox">
-        <input data-montage-id="textField" type="text">
-        <textarea data-montage-id="textArea"></textarea>
+        <textarea data-montage-id="textArea" rows="4" cols="70"></textarea>
     </div>
 </body>
 </html>
